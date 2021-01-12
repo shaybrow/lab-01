@@ -1,0 +1,64 @@
+
+
+header{
+ 
+  background-color: powderblue;
+
+}
+#special{
+ 
+  background-color: olivedrab;
+}
+#help{
+  background-color: orchid;
+}
+section:nth-child(4){
+  background-color: blue;
+}
+section:nth-child(3){
+  background-color: rgb(4, 4, 41);
+}
+
+article:nth-child(5){
+  background-color: rgb(163, 157, 163);
+}
+article:nth-child(6){
+  background-color: rgb(161, 4, 161);
+}
+article:nth-child(8){
+  background-color: rgb(111, 231, 31);
+}
+
+footer {
+  background-color: plum;
+}
+
+@media (min-width: 768px){
+  main{
+    width: 960px;
+    overflow: hidden;
+  }
+  header{
+    background-color: blue;
+  }
+  section{
+    border: solid;
+  }
+  #special{
+    background-color: green;
+  }
+  #right{
+    background-color: teal;
+  }
+#left{
+  background-color: palegoldenrod;
+}
+#help{
+
+  background-color: orangered;
+}
+footer{
+
+  background-color: salmon;
+}
+}
