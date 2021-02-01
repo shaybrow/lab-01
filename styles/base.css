@@ -1,4 +1,5 @@
 * {
   box-sizing: border-box;
   /* makes the size of box include the size of the border */
+  margin:0;
 }

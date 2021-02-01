@@ -3,6 +3,15 @@ main{
   margin-left: auto;
   margin-right: auto;
 }
+
+main{
+  display:flex;
+  grid-template-columns: repeat(1, 5fr);
+  grid-template-rows: repeat(1, 5fr);
+  max-width: 960px;
+  justify-items: center;
+  width: 100%;
+}
 header{
   width: 480px;
   height: 75px;
@@ -11,42 +20,51 @@ header{
   align-items: center;
   border: solid;
   background-color: powderblue;
+  font-size: 2em;
   /* nicholas showed us this centering trick from https://css-tricks.com/centering-css-complete-guide/ */
 }
 section{
-  width: 480px;
-  height: 150px;
-  display: flex;
+  width: 90vw;
+  height:20vh;
   justify-content: center;
   align-items: center;
   border: solid;
-
+  display: flex;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 #special{
-  height: 150px;
+  height: 60px;
   background-color: olivedrab;
 }
+div {
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 article{
-  width: 240px;
-  height: 250px;
-  float: left;
+  width: 50vw;
+  height:20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid;
+  font-size: 2em;
+  
 }
 #help{
-  clear: both;
+
   background-color: orchid;
 }
 article:nth-child(6){
   background-color: blue;
 }
 /* article:nth-child(4){
-  float: right;
+ 
 } */
 footer {
-  clear: both;
+ 
   /* https://www.w3schools.com/css/css_float_clear.asp */
   width: 480px;
   height: 80px;
@@ -57,14 +75,14 @@ footer {
   background-color: plum;
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
   main{
     width: 960px;
-    overflow: hidden;
+  
   }
   header{
     width: 960px;
-    height: 200px;
+    height: 100px;
     background-color: blue;
   }
   section{
@@ -75,15 +93,15 @@ footer {
   #special{
     height: 600px;
     width: 200px;
-    float: left;
+  
     background-color: green;
   }
   #right{
-    float: right;
+  
     background-color: teal;
   }
 #left{
-  float:left;
+
   background-color: palegoldenrod;
 }
 article{
@@ -92,15 +110,13 @@ article{
   border: solid;
 }
 #help{
-  clear:none;
   background-color: orangered;
 }
 footer{
-  clear: none;
+
   height: 150px;
   width: 760px;
   border:solid;
-  float: right;
   background-color: salmon;
 }
-}
+} */
